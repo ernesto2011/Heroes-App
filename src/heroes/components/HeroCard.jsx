@@ -7,13 +7,14 @@ export const HeroCard = ({
 }) => {
     const heroImgUrl = `/assets/${id}.jpg`;
   return (
-    <div className='col'>
+    <div className='col animate__animated animate__fadeIn'>
         <div className='card'>
             <div className='row no-gutters'>
-                <div className="col-4"></div>
-                <img src={heroImgUrl} className='card-img' alt={superhero} />
-            </div>
-            <div className='col-8'>
+                <div className="col-4">
+                    <img src={heroImgUrl} className='card-img' alt={superhero} />
+
+                </div>
+                <div className='col-8'>
                 <div className='card-body'>
                     <h5 className='card-title'>{superhero}</h5>
                     {
@@ -27,6 +28,8 @@ export const HeroCard = ({
                     </Link>
                 </div>
             </div>
+            </div>
+            
 
         </div>
     </div>
