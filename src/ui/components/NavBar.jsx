@@ -5,7 +5,6 @@ import { AuthContext } from '../../Auth';
 
 export const NavBar = () => {
 const {user, logOut} = useContext(AuthContext)
-console.log(user);
 const navigate = useNavigate();
 const onLogOut = () => {
     logOut()
