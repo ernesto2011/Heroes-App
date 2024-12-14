@@ -19,7 +19,7 @@ export const HeroPage = () => {
   return (
     <div className='row mt-5'>
          <div className="col-4">
-            <img src={`/assets/${hero.id}.jpg`} alt={hero.superhero} 
+            <img src={`https://github.com/ernesto2011/Heroes-App/blob/main/assets/${hero.id}.jpg?raw=true`} alt={hero.superhero} loading='lazy'
             className="img-thumbnail animate__animated animate__fadeInLeft" />
          </div>
          <div className="col-8">

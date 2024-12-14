@@ -5,13 +5,13 @@ export const HeroCard = ({
     id, superhero, publisher, alter_ego,
     first_appearance, characters,
 }) => {
-    const heroImgUrl = `/assets/${id}.jpg`;
+    const heroImgUrl = `https://github.com/ernesto2011/Heroes-App/blob/main/assets/${id}.jpg?raw=true`;
   return (
     <div className='col animate__animated animate__fadeIn'>
         <div className='card'>
             <div className='row no-gutters'>
                 <div className="col-4">
-                    <img src={heroImgUrl} className='card-img' alt={superhero} />
+                    <img src={heroImgUrl} className='card-img' alt={superhero} loading='lazy' />
 
                 </div>
                 <div className='col-8'>
